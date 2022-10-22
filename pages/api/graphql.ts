@@ -1,6 +1,7 @@
 import  {  ApolloServer  }  from  "apollo-server-micro";
-import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core';
+import { ApolloServerPluginLandingPageGraphQLPlayground, ApolloServerPluginLandingPageLocalDefault } from 'apollo-server-core';
 import Cors from 'micro-cors';
+import "graphql-import-node";
 
 import  typeDefs  from  "../../graphql/schema.graphql";
 import  resolvers  from  "../../graphql/resolvers";
